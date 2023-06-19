@@ -1,0 +1,28 @@
+﻿Monumenti Online - Sito Web
+
+
+
+
+Creazione di un sito web in grado di fruire i luoghi d’interesse dell’ovest veronese in base alle esigenze del cliente. 
+
+
+I luoghi dei quali tratta il sito web sono: 
+* monumenti
+* chiese
+* parchi
+* musei
+* ville
+* luoghi storici
+
+
+Sono suddivisi in base al:
+* nome
+* tipo
+* indirizzo
+* note 
+
+
+La nostra suddivisione dei lavori consiste in:
+* programmazione → cooperativo
+* design thinking → cooperativo
+* progettazione lavoro → cooperativo
