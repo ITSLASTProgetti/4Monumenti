@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Geographical Map</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+    
+    .search-bar {
+      margin: 20px;
+    }
+    
+    .search-bar input[type="text"] {
+      padding: 10px;
+      width: 300px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .search-bar input[type="submit"] {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+  <div class="search-bar">
+    <form>
+      <input type="text" placeholder="Enter a location">
+      <input type="submit" value="Search">
+    </form>
+  </div>
+
+  <script>
+    function initMap() {
+  // Coordinate del centro della mappa
+  var myLatLng = { lat: 40.7128, lng: -74.0060 };
+
+  // Crea un nuovo oggetto mappa
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: myLatLng,
+    zoom: 10
+  });
+
+  // Aggiungi un marker sulla mappa
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Marker di esempio'
+  });
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=TUA_CHIAVE_API&callback=initMap" async defer>
+</script>
+<script>
+  window.onload = function() {
+    initMap();
+  };
+</script>
+</body>
+</html>
